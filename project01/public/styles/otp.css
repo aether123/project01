@@ -1,0 +1,59 @@
+body header {
+  background-color: white;
+  font-size: 1.75rem;
+}
+body section {
+  background-color: white;
+  border: 1px solid red;
+  width: 320px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+body section div {
+  margin: 0.5rem 0rem;
+  padding: 0rem 0.5rem;
+}
+body section div.otp-group div.otp-title {
+  font-size: 1.5rem;
+}
+body section div.otp-group div.otp-title p {
+  display: block;
+  text-align: center;
+}
+body section div.otp-main {
+  font-size: 1.25rem;
+}
+body section div.otp-main p {
+  text-align: center;
+}
+body section div.otp-phoneNumber {
+  font-size: 1.25rem;
+}
+body section div.otp-phoneNumber p {
+  display: block;
+  text-align: center;
+}
+body section div.otp-input input {
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+body section div.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body section div.btn-group div.btn {
+  margin: 0.5rem 1rem;
+}
+body section div.btn-group div.btn button.resend {
+  font-size: 1.5rem;
+}
+body section div.btn-group div.btn button.next-btn {
+  font-size: 1.5rem;
+}
+body section div.error-msg {
+  font-size: 1.5rem;
+  color: red;
+}/*# sourceMappingURL=otp.css.map */

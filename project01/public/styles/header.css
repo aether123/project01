@@ -1,0 +1,55 @@
+body header {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body header div.title {
+  flex-basis: 150px;
+}
+body header div.title a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+body header div.search {
+  flex: 1 1 400px;
+}
+body header div.search form {
+  display: flex;
+  align-items: center;
+}
+body header div.search form input {
+  font-size: 1.5rem;
+  height: 40px;
+  width: 80%;
+}
+body header div.search form button {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+body header div.cart {
+  flex-basis: 100px;
+}
+body header div.cart button {
+  display: block;
+  position: relative;
+}
+body header div.cart button div {
+  padding-bottom: 0.2rem;
+  display: block;
+  position: absolute;
+  text-align: center;
+  right: -40px;
+  top: -5px;
+  font-size: 1.25rem;
+  width: 40px;
+  height: 20px;
+  border-radius: 25%/50%;
+  background-color: red;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */

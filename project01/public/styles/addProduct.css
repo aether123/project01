@@ -1,0 +1,88 @@
+body header {
+  padding: 0rem 0rem;
+}
+body header div {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+body div.form-group {
+  border: 1px solid #e5e5e5;
+  background-color: white;
+}
+body div.form-group form {
+  margin-left: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+body div.form-group form div {
+  margin: 0.5rem 0rem;
+}
+body div.form-group form div.upload-group button.uploadBtn {
+  font-size: 1.5rem;
+  display: block;
+}
+body div.form-group form div.upload-group div {
+  display: inline-block;
+  position: relative;
+}
+body div.form-group form div.upload-group div img.closeFile {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body div.form-group form div.description-group div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body div.form-group form div.description-group div label {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+body div.form-group form div.description-group div p {
+  font-size: 1.5rem;
+}
+body div.form-group form div.description-group textarea {
+  resize: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body div.form-group form div.productName-group div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body div.form-group form div.productName-group div label {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+body div.form-group form div.productName-group div p {
+  font-size: 1.5rem;
+}
+body div.form-group form div.productName-group textarea {
+  resize: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body div.form-group form div.price-group label,
+body div.form-group form div.price-group input,
+body div.form-group form .productNum-group label,
+body div.form-group form .productNum-group input {
+  font-size: 1.5rem;
+}
+body div.form-group form button.form-btn {
+  width: 10vw;
+  font-size: 1.5rem;
+}
+body div.form-group form div.error-msg {
+  font-size: 1.5rem;
+  color: red;
+}/*# sourceMappingURL=addProduct.css.map */

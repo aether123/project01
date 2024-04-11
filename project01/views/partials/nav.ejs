@@ -1,0 +1,58 @@
+<nav>
+  <div class="navbar">
+    <ul class="navbar-nav">
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="/"> 首頁 </a>
+      </li> -->
+      <% if(!user){ %>
+      <li class="nav-item">
+        <a class="nav-link" href="/auth/login"> 會員登入 </a>
+      </li>
+      <% }%> <% if(!user){ %>
+      <li class="nav-item">
+        <a class="nav-link" href="/auth/signup"> 註冊會員 </a>
+      </li>
+      <% }%> <% if(user){ %>
+      <li class="nav-item seller-item">
+        <div class="seller-content">
+          <p>賣家中心</p>
+          <svg viewBox="0 0 12 12" fill="none" width="12" height="12">
+            <path
+              d="M6 8.146L11.146 3l.707.707-5.146 5.147a1 1 0 01-1.414 0L.146 3.707.854 3 6 8.146z"
+              fill="black"
+            />
+          </svg>
+        </div>
+
+        <div class="items" style="display: none">
+          <a href="/seller/myProducts">我的商品</a>
+          <a href="/seller/products">新增商品</a>
+          <a href="">銷售狀態</a>
+          <a href="">退貨/退款</a>
+        </div>
+      </li>
+
+      <% }%> <% if(user){ %>
+      <li class="nav-item user-items">
+        <div class="user">
+          <div class="headshot">
+            <img
+              src="<%=user.photo || '/user.png' %>"
+              width="30px"
+              height="30px"
+              alt="大頭貼"
+            />
+          </div>
+          <div><p><%=user.username%></p></div>
+        </div>
+        <div class="user-content" style="display: none">
+          <a class="nav-link" href="/user/userInfo"> 我的帳戶 </a>
+          <a class="nav-link" href="/user/cart"> 購買清單 </a>
+          <a class="nav-link" href="/auth/signout"> 會員登出 </a>
+        </div>
+      </li>
+      <% }%>
+    </ul>
+  </div>
+</nav>
+<script src="/nav.js"></script>

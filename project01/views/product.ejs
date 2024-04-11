@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <link rel="stylesheet" href="/styles/product.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <%- include ("partials/nav") %> <%- include ("partials/header") %>
+    <section class="item-content">
+      <img class="product-image" src="<%= product.imageUrl%>" />
+      <div>
+        <p class="productName"><%=product.name %></p>
+        <p class="price">$<%=product.price %></p>
+        <div class="item-content">
+          <label>數量</label>
+          <input id="quantity" type="number" value="1" min="1" required />
+          <p>庫存<%=product.quantity-product.sold %></p>
+        </div>
+        <div class="btn-group">
+          <button class="add-cart-btn">加入購物車</button>
+          <button class="purchase">直接購買</button>
+        </div>
+      </div>
+    </section>
+    <section class="seller-product-info">
+      <div>
+        <p class="title">賣家名稱</p>
+        <p class="content"><%=product.username%></p>
+      </div>
+      <div>
+        <p class="title">商品描述</p>
+        <p class="content"><%=product.description%></p>
+      </div>
+    </section>
+    <script src="/seller/product.js"></script>
+  </body>
+</html>

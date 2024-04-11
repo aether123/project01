@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/addProduct.css" />
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <header>
+      <div class="title"><a href="/">阿良購物</a></div>
+    </header>
+    <div class="form-group">
+      <form enctype="multipart/form-data">
+        <div class="upload-group">
+          <input
+            type="file"
+            id="file-uploader"
+            data-target="file-uploader"
+            accept="image/*"
+            style="display: none"
+          />
+
+          <div>
+            <img
+              src="/icons8-close-30.png"
+              class="closeFile"
+              alt="x"
+              style="display: none"
+            />
+            <img
+              src=""
+              class="previewImg"
+              alt="商品照片"
+              style="display: none; max-width: 480px; max-height: 480px"
+            />
+          </div>
+
+          <button class="uploadBtn">上傳照片</button>
+        </div>
+        <div class="productName-group">
+          <div>
+            <label>商品名稱</label>
+            <p class="productName-limit">0/50</p>
+          </div>
+
+          <textarea
+            id="productName"
+            name="productName"
+            rows="1"
+            maxlength="50"
+            placeholder="輸入商品名稱"
+            required
+          ></textarea>
+        </div>
+        <div class="description-group">
+          <div>
+            <label>商品描述</label>
+            <p class="descriotion-limit">0/300</p>
+          </div>
+
+          <textarea
+            id="description"
+            name="description"
+            rows="1"
+            placeholder="輸入商品描述"
+            maxlength="300"
+            required
+          ></textarea>
+        </div>
+        <div class="price-group">
+          <label>價格</label>
+          <input id="price" name="price" placeholder="設定價格" />
+        </div>
+        <div class="productNum-group">
+          <label>商品數量</label>
+          <input id="productNum" name="quantity" placeholder="設定商品數量" />
+        </div>
+        <div class="error-msg"></div>
+        <button class="form-btn">上架</button>
+      </form>
+    </div>
+    <script src="/seller/addProduct.js"></script>
+  </body>
+</html>

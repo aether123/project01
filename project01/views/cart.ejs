@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/styles/cart.css" />
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <header>
+      <div class="title"><a href="/">阿良購物</a></div>
+      <div class="search">
+        <form action="/">
+          <input id="search" type="text" name="productName" required />
+          <button class="btn search-btn">
+            <img src="/search.png" alt="搜尋" width="30px" height="30px" />
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <table>
+        <tr>
+          <th><input type="checkbox" class="check-all" /></th>
+          <th class="prdocutname">商品</th>
+          <th>單價</th>
+          <th>數量</th>
+          <th>總計</th>
+          <th>操作</th>
+        </tr>
+
+        <%products.forEach( item=>{%>
+        <tr class="item">
+          <td><input type="checkbox" class="check" /></td>
+          <div>
+            <td class="product-name">
+              <img src="<%=item.imageUrl%>" width="80px" height="80px" />
+              <p calss="">[<%=item.username%>]<%=item.name%></p>
+            </td>
+
+            <td class="price"><%=item.price%></td>
+            <td>
+              <input
+                id="quantity"
+                type="number"
+                min="1"
+                value="<%=item.quantity%>"
+                required
+              />
+            </td>
+            <td class="total-price"><%=item.quantity*item.price%></td>
+            <td>
+              <button class="delete-btn btn" id="<%=item.id%>">刪除</button>
+            </td>
+          </div>
+        </tr>
+
+        <%})%>
+      </table>
+    </main>
+    <section>
+      <div>總金額:</div>
+      <div class="amount">0</div>
+      <div><button class="order-btn">買單</button></div>
+    </section>
+    <script src="/user/cart.js"></script>
+  </body>
+</html>

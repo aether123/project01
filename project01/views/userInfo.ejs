@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/userInfo.css" />
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <header>
+      <div class="title"><a href="/">阿良購物</a></div>
+    </header>
+    <main>
+      <form>
+        <table>
+          <tr>
+            <th>使用者帳號</th>
+            <td><%=user.username%></td>
+          </tr>
+
+          <tr>
+            <th>姓名</th>
+            <td>
+              <div><p><%=user.realName%></p></div>
+              <div>
+                <input
+                  type="text"
+                  name="realName"
+                  value="<%=user.realName%>"
+                  style="display: none"
+                />
+              </div>
+              <div><a href="#">變更</a></div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>email</th>
+            <td>
+              <div><p><%=user.email%></p></div>
+              <div>
+                <input
+                  type="text"
+                  name="email"
+                  value="<%=user.email%>"
+                  style="display: none"
+                />
+              </div>
+              <div><a href="#">變更</a></div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>手機號碼</th>
+            <td>
+              <div><p><%=user.phone%></p></div>
+              <div>
+                <input
+                  type="text"
+                  name="phone"
+                  value="<%=user.phone%>"
+                  style="display: none"
+                />
+              </div>
+              <div><a href="#">變更</a></div>
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <div>
+        <img
+          class="img"
+          src="<%=user.photo || '/user.png' %>"
+          width="30px"
+          height="30px"
+          alt="大頭貼"
+        />
+        <input
+          class="file"
+          type="file"
+          accept=".jpg,.jpeg,.png"
+          style="display: none"
+        />
+        <button class="file-btn">選擇圖片</button>
+        <p>檔案大小:最大1MB</p>
+        <p>檔案限制: .JPEG, .PNG</p>
+      </div>
+    </main>
+    <button class="save">儲存</button>
+
+    <script src="/user/userInfo.js"></script>
+  </body>
+</html>

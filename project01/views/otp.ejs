@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/otp.css" />
+  </head>
+  <body>
+    <header>阿良購物註冊</header>
+    <section>
+      <div class="otp-group">
+        <div class="otp-title"><p>輸入認證碼</p></div>
+        <div class="otp-main"><p>你的驗證碼已過簡訊傳送至</p></div>
+        <div class="otp-phoneNumber">
+          <p class="phoneNumber"><%= phoneNumber %></p>
+        </div>
+        <div class="otp-input">
+          <input class="validNumber" type="text" name="validNumber" />
+        </div>
+        <!-- <div><p>沒收到驗證碼嗎?</p></div> -->
+        <div class="error-msg"></div>
+        <div class="btn-group">
+          <div class="btn">
+            <button class="resend">重新傳送</button>
+          </div>
+          <div class="btn"><button class="next-btn">下一步</button></div>
+        </div>
+      </div>
+    </section>
+    <script src="/signup/otp.js"></script>
+  </body>
+</html>

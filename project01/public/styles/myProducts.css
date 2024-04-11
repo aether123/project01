@@ -1,0 +1,41 @@
+body header div {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+body section.product-list-main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body section.product-list-main div.shopee-tabs {
+  background-color: #e5e5e5;
+  width: 900px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body section.product-list-main div.shopee-tabs div a {
+  display: block;
+  width: 300px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+body section.product-list-main div.shopee-table-main-header table.shopee-table-header {
+  border-collapse: collapse;
+}
+body section.product-list-main div.shopee-table-main-header table.shopee-table-header tr {
+  border: 1px solid black;
+  width: 900px;
+}
+body section.product-list-main div.shopee-table-main-header table.shopee-table-header tr th,
+body section.product-list-main div.shopee-table-main-header table.shopee-table-header tr td {
+  margin: 0.5rem 0rem;
+  width: 170px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  display: inline-block;
+  text-align: center;
+}/*# sourceMappingURL=myProducts.css.map */

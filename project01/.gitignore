@@ -1,0 +1,7 @@
+.env
+*.map
+*.scss
+*.png
+node_modules/
+packge-lock.json
+package.json

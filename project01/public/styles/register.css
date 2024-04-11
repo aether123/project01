@@ -1,0 +1,31 @@
+body header {
+  background-color: white;
+  font-size: 1.75rem;
+}
+body section {
+  padding: 0rem 0.5rem;
+  background-color: white;
+  border: 1px solid red;
+  width: 320px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+body section div {
+  margin: 0.5rem 0rem;
+}
+body section div.title {
+  font-size: 1.5rem;
+}
+body section div.local-login form div.form-input input {
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+body section div.local-login form div p.erro-message {
+  font-size: 1.5rem;
+  color: red;
+}
+body section div.local-login form button {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=register.css.map */

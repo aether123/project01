@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <%- include ("partials/nav") %> <%- include ("partials/header") %>
+    <main>
+      <%if (products.length===0){%>
+      <div claee="not-found">
+        <img src="/icons8-search-64.png" alt="search" />
+        <p>找不到结果</p>
+        <p>嘗試不同或更常見的關鍵字</p>
+      </div>
+
+      <%}else{%> <% products.forEach(product=>{ %>
+      <a href="/seller/products/<%= product.id %>">
+        <div class="product">
+          <img src="<%= product.imageUrl%>" width="186px" height="186px" />
+
+          <p>[ <%= product.username%> ]<%= product.name %></p>
+          <p>$<%=product.price%></p>
+        </div>
+      </a>
+
+      <% })%> <%}%>
+    </main>
+  </body>
+</html>

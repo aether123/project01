@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/order.css" />
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <header>
+      <div class="title"><a href="/">阿良購物</a></div>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <th class="prdocutname">訂單商品</th>
+          <th>單價</th>
+          <th>數量</th>
+          <th>總價</th>
+        </tr>
+        <%products.forEach( item=>{%>
+        <tr>
+          <td class="product-name">
+            <img
+              src="<%=item.imageUrl%>"
+              width="40px"
+              height="40px"
+              alt="商品照片"
+            />
+            <div class="itemName">[<%=item.username%>]<%=item.name%></div>
+          </td>
+          <td><%=item.price%></td>
+          <td><%=item.quantity%></td>
+          <td><%= item.quantity*item.price %></td>
+        </tr>
+        <%})%>
+      </table>
+      <div class="shipping">
+        <% if (user.realName && user.phone && address.address ){%>
+        <div>
+          <p>寄送資訊:</p>
+          <p class="send-info">
+            <%=user.realName%> &nbsp;&nbsp;<%=user.phone%>
+            &nbsp;&nbsp;<%=address.address%>
+          </p>
+          <button class="addAddressBtn">變更</button>
+        </div>
+        <%}else{ %>
+      </div>
+
+      <div>
+        <button class="addAddressBtn">新增地址</button>
+      </div>
+      <%} %>
+      <div>
+        <p>總金額:</p>
+        <p class="amount"><%=amount%></p>
+      </div>
+      <div class="orders">
+        <% if (products.every(product => product.username ===
+        products[0].username)){%>
+        <button class="btn billBtn">信用卡結帳</button>
+        <%}%>
+        <button class="btn CODBtn">貨到付款</button>
+      </div>
+    </main>
+    <div class="form-group" style="display: none">
+      <form>
+        <div>
+          <label> 姓名</label>
+          <input
+            type="text"
+            name="realName"
+            value="<%= user.realName || ''%>"
+            required
+          />
+        </div>
+        <div>
+          <label>電話號碼</label>
+          <input
+            type="text"
+            name="phone"
+            value="<%= user.phone || '' %>"
+            required
+          />
+        </div>
+        <div>
+          <label>寄件地址</label>
+          <input
+            type="text"
+            name="address"
+            value="<%= address.address || '' %>"
+            required
+          />
+        </div>
+        <div class="btn-group">
+          <button class="cancle">取消</button>
+          <button type="submit">完成</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/user/order.js"></script>
+  </body>
+</html>

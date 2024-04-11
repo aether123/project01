@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/register.css" />
+  </head>
+  <body>
+    <header>阿良購物註冊</header>
+    <section>
+      <div class="register">
+        <div class="title">註冊</div>
+        <div class="local-login">
+          <form>
+            <div class="form-input">
+              <input
+                type="text"
+                name="phone"
+                placeholder="手機號碼"
+                id="form-input"
+                required
+              />
+            </div>
+            <div><p class="erro-message"></p></div>
+            <button class="btn next-btn">下一步</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/signup/register.js"></script>
+  </body>
+</html>

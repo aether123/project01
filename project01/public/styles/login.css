@@ -1,0 +1,61 @@
+body header {
+  background-color: white;
+  font-size: 1.75rem;
+}
+body section {
+  background-color: white;
+  border: 1px solid red;
+  width: 320px;
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+body section div.login div {
+  margin: 0.5rem 0rem;
+}
+body section div.login div.title {
+  font-size: 1.5rem;
+  padding: 0rem 0.5rem;
+}
+body section div.login div.local-login form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body section div.login div.local-login form div input {
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+body section div.login div.local-login form button {
+  font-size: 1.5rem;
+}
+body section div.login div.message {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body section div.login div.message p {
+  font-size: 1.25rem;
+  padding: 0rem 0.5rem;
+}
+body section div.login div.api-login-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body section div.login div.api-login-group div.api-login {
+  padding: 0rem 0.3rem;
+  font-size: 1.2rem;
+}
+body section div.login div.api-login-group div.api-login button a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+body section div.login div a.signup {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}/*# sourceMappingURL=login.css.map */

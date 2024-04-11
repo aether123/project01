@@ -1,0 +1,73 @@
+body section.item-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+body section.item-content img {
+  width: 20%;
+}
+body section.item-content div {
+  flex: 1 0.5 300px;
+  padding: 0 0.5rem;
+}
+body section.item-content div p {
+  font-size: 1.85rem;
+  padding: 0.5rem;
+}
+body section.item-content div p.price {
+  width: 75%;
+  background-color: #e5e5e5;
+  color: red;
+}
+body section.item-content div div.item-content {
+  padding: 0.5rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+body section.item-content div div.item-content label {
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+}
+body section.item-content div div.item-content input {
+  padding: 0rem 0.5rem;
+  font-size: 1.5rem;
+}
+body section.item-content div div.item-content p {
+  padding: 0rem 0.5rem;
+  font-size: 1.5rem;
+}
+body section.item-content div div.btn-group {
+  padding: 0.5rem 0rem;
+}
+body section.item-content div div.btn-group button {
+  width: 200px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #ee4d2d;
+  border: 1px solid rgba(255, 87, 34, 0.1);
+  cursor: pointer;
+}
+body section.item-content div div.btn-group button.add-cart-btn {
+  color: #ee4d2d;
+  border: 1px solid #ee4d2d;
+  background-color: rgba(255, 87, 34, 0.1);
+}
+body section.seller-product-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body section.seller-product-info div {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+body section.seller-product-info div p.title {
+  background-color: rgba(255, 87, 34, 0.1);
+  font-size: 1.75rem;
+}
+body section.seller-product-info div p.content {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=product.css.map */

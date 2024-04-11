@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/head") %>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/myProducts.css" />
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <header>
+      <div class="title"><a href="/">阿良購物</a></div>
+    </header>
+    <section class="product-list-main">
+      <div class="shopee-tabs">
+        <div><a href="#" class="all">全部</a></div>
+        <div><a href="#" class="for-sale">架上商品</a></div>
+        <div><a href="#" class="sold-out">已售完</a></div>
+      </div>
+      <div class="shopee-table-main-header">
+        <table class="shopee-table-header">
+          <tr>
+            <th>商品名稱</th>
+            <th>價格</th>
+            <th>商品數量</th>
+            <th>已出售</th>
+            <th>下架</th>
+          </tr>
+          <% shopee.forEach(item=> { %>
+          <tr
+            class="item-row <%= (item.quantity - item.sold == 0) ? 'sold-out-item' : 'for-sale-item' %>"
+          >
+            <td><%= item.name %></td>
+            <td><%= item.price %></td>
+            <td><%= item.quantity %></td>
+            <td><%= item.sold %></td>
+            <td>
+              <% if (item.quantity - item.sold === 0) { %>
+              <p id="<%= item.id %>">
+                <a href="#" class="relist">重新上架</a>
+              </p>
+              <% } else { %>
+              <p id="<%= item.id %>">
+                <a href="#" class="recall">下架</a>
+              </p>
+              <% } %>
+            </td>
+          </tr>
+          <% }); %>
+        </table>
+      </div>
+    </section>
+    <script src="/seller/myProducts.js"></script>
+  </body>
+</html>

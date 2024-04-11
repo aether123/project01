@@ -1,0 +1,93 @@
+body header {
+  padding: 0rem 0rem;
+}
+body header div {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+body main {
+  background-color: white;
+}
+body main table {
+  margin-left: 2rem;
+  table-layout: auto;
+}
+body main table tr th {
+  font-size: 1.5rem;
+  width: 100px;
+}
+body main table tr th .check-all {
+  transform: scale(1.5);
+}
+body main table tr th.prdocutname {
+  width: 300px;
+  text-align: start;
+}
+body main table tr td {
+  font-size: 1.25rem;
+  text-align: center;
+}
+body main table tr td .check {
+  transform: scale(1.5);
+}
+body main table tr td.product-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+body main div.shipping {
+  padding: 0.5rem 0rem;
+  background-color: rgb(238, 231, 231);
+}
+body main div.shipping div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0rem 0.5rem;
+}
+body main div.shipping div p {
+  padding: 0.5rem 0.5rem;
+  font-size: 1.25rem;
+}
+body main div.shipping div button {
+  font-size: 1.25rem;
+  border: none;
+  color: red;
+  background-color: rgb(238, 231, 231);
+}
+body main div.orders button.btn {
+  margin: 0rem 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #ee4d2d;
+  border: 1px solid rgba(255, 87, 34, 0.1);
+}
+body div.form-group {
+  width: 40%;
+  height: 30%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #e5e5e5;
+  background-color: white;
+}
+body div.form-group div {
+  margin: 1rem 0rem;
+}
+body div.form-group div label {
+  font-size: 1.5rem;
+}
+body div.form-group div input {
+  font-size: 1.5rem;
+}
+body div.form-group div.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding: 0rem 0.5rem;
+}
+body div.form-group div.btn-group button {
+  font-size: 1.5rem;
+  margin: 0rem 0.5rem;
+}/*# sourceMappingURL=order.css.map */
