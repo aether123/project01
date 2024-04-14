@@ -9,7 +9,8 @@ RESTful風格，
 金流： 綠界api，
 
 # 手機註冊
-![註冊](https://github.com/aether123/project01/assets/27948644/40cfe790-8997-4333-be66-add59e0cdd1f) 
+![註冊](https://github.com/aether123/project01/assets/27948644/fd216578-55b9-4bfb-90fb-fe64d8710805)
+
 
 1.手機註冊會員，TWILIO套件實作otp
 
